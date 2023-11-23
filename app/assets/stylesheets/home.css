@@ -1,0 +1,125 @@
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15%;
+    height: 100%;
+    background-color: #345567;
+    z-index: 100;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+  
+.video {
+    border: 1px solid black ;
+    justify-content: center;
+    align-items: center;
+    width: 100dvh;
+    height: 60dvh;
+}
+
+#container_cameras {
+    border: 1px solid black;
+    min-height: 75dvh;
+}
+
+#container_cameras h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.camera-item a {
+    display: flex;
+    font-size: 13px;
+    margin:5%;
+    margin-top: 10%;
+    &:hover {
+        color: gray;
+    }
+    color: white;
+    text-decoration: none;
+}
+
+#icon_login{
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    margin-bottom: 45px;
+}
+
+#icon_login img{
+    height: 100px;
+    border-radius: 90px;
+}
+
+.video video {
+    height: 100%;
+    width: 100%;
+}
+
+.body_painel {
+    justify-content: center;
+    align-items: center;
+    margin: 2.6% 0px 0px 4.9%;
+    position: absolute;
+    height: 88%;
+}
+
+#painel {
+    background-color: #6A8EA1;
+    border: 1px solid black;
+    border-radius: 5px 5px 15px 15px;
+    margin: 1%;
+    min-height: 95vh;
+    margin-left: 16%;
+}
+
+#painel .sidebar_painel {
+    font-size: 15px;
+    min-height: 94vh;
+    position: relative;
+    margin-left: 70%;
+    border-left: 1px solid black;
+    padding: 0.5%;
+}
+
+.sidebar_painel ul li{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.logs {
+    background-color: #D9D9D9;
+
+    font-size: 14px;
+    position: absolute;
+    display: flex;
+
+    border: 1px solid black ;
+    margin: 2.5% 0% 0% 0%;
+
+    height: 20vh;
+    width: 100%;
+}
+
+.logs ul {
+padding: 0;
+margin-top: 2%;
+list-style: none;
+}
+
+.logs li {
+margin-bottom: 5%;
+}

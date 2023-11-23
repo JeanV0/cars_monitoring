@@ -1,0 +1,88 @@
+.body {
+    background-color: #8ED6FE;
+}
+
+.container {
+    background-color: #EBF8FF;
+    min-height: 95vh;
+    padding: 0;
+    border-radius: 16px;
+    margin: 1.2%;
+    flex-grow: 1;
+    border: 1px solid black;
+}
+
+.login {
+    min-height: 95vh;
+    margin-left: 70%;
+    border-left: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+label{
+    margin-bottom: 100px;
+}
+
+.welcome {
+    padding-top: 1%;
+    position: absolute;
+    min-width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+#email{
+    margin-bottom: 20px ;
+}
+
+#icon_login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    margin-bottom: 45px;
+}
+
+img{
+    height: 125px;
+    border-radius: 90px;
+}
+
+#forget_pass{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    margin-bottom: 25px;
+}
+
+input{
+    background-color: #D9D9D9;
+    border: 1px solid black;
+    height: 20px;
+    width: 220px;
+    border-radius: 5px;
+}
+
+#header_welcome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+
+#submit {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 30px;
+    border-radius: 35px;
+}

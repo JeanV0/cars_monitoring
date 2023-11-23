@@ -1,0 +1,7 @@
+<% @cams.each do |cam| %>
+<li class="camera-item">
+    <a href="/dashboard/cam/<%= cam.identifier %>">
+    <%= cam.identifier %> ( <%= cam.status ? "Online" : "Offline" %> )
+    </a>
+</li>
+<% end %>

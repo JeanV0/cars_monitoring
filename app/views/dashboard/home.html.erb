@@ -1,0 +1,31 @@
+<%= stylesheet_link_tag('home.css') %>
+<div class="sidebar">
+<div id="icon_login">
+    <%= image_tag('icon.jpeg') %>
+</div>
+<div id="container_cameras">
+    <h3>Cameras disponiveis</h3>
+    <ul>
+        <%= render "cams" %>
+    </ul>
+</div>
+</div>
+<div id="painel">
+    <div class="body_painel">
+
+        <div class="video">
+            <video id="video" src="exemplo.mp4" type="video/mp4" controls>
+
+            </video>
+        </div>
+    
+        <div class="logs">
+            Nenhum video selecionado
+        </div>
+    </div>
+    <div class="sidebar_painel">
+        <ul>
+            Nenhuma camera selecionada
+        </ul>
+    </div>
+</div>
