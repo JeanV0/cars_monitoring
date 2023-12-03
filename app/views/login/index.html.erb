@@ -1,25 +1,11 @@
 <%= stylesheet_link_tag('login.css') %>
-<div class="container">
-  <section class="welcome">
-      <header >
-          <h1 id="header_welcome">Bem-vindo!</h1></br>
-        </header>
-  </section>
-  <section class="login">
-      <form action="#" method="post">
-          <div id="icon_login">
-              <%= image_tag('icon.jpeg') %>
-          </div>
-            <% if flash[:notice] %>
-                <%= content_tag :h3, flash[:notice] %>
-            <% end %>
-          <label for="login">Login</label></br>
-          <input type="text" name="email" id="email"></br>    
-          <label for="senha">Senha</label></br>
-          <input type="password" name="password" id="senha"></br>
-          <a href="#" id="forget_pass">Esqueceu a senha?</a></br>
-          <input type="submit" value="Login" id="submit"></br>
-      </form>
-
-  </section>
+<div class="login_container">
+  <div class="container">
+    <section class="welcome">
+      <%= render partial: "welcome" %>
+    </section>
+    <section class="login">
+      <%= render partial: "login" %>
+    </section>
+  </div>
 </div>

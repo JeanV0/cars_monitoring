@@ -1,0 +1,14 @@
+<form action="#" method="post">
+    <div class="icon">
+        <%= image_tag('icon.jpeg') %>
+    </div>
+        <% if flash[:notice] %>
+            <%= content_tag :h2, flash[:notice] %>
+        <% end %>
+    <label for="login">Login</label>
+    <input type="text" name="email" id="email">    
+    <label for="senha">Senha</label>
+    <input type="password" name="password" id="senha">
+    <a href="#" id="forget_pass">Esqueceu a senha?</a>
+    <input type="submit" value="Login" id="submit">
+</form>

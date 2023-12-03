@@ -34,7 +34,7 @@ Rails.application.configure do
   end
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
-  config.active_storage.service = ENV.fetch("STORAGE_OPTIONS")
+  config.active_storage.service = ENV.fetch("STORAGE_OPTION")
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = false
@@ -48,7 +48,7 @@ Rails.application.configure do
   config.active_support.disallowed_deprecation = :raise
 
   # Tell Active Support which deprecation messages to disallow.
-  config.active_support.disallowed_deprecation_warnings = []
+  config.active_support.disallowed_depr ecation_warnings = []
 
   # Raise an error on page load if there are pending migrations.
   config.active_record.migration_error = :page_load
