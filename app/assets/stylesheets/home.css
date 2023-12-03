@@ -1,125 +1,178 @@
-.sidebar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 15%;
-    height: 100%;
-    background-color: #345567;
-    z-index: 100;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.sidebar li {
-    margin-bottom: 10px;
-}
-  
-.video {
-    border: 1px solid black ;
-    justify-content: center;
-    align-items: center;
-    width: 100dvh;
-    height: 60dvh;
-}
-
-#container_cameras {
-    border: 1px solid black;
-    min-height: 75dvh;
-}
-
-#container_cameras h3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.camera-item a {
-    display: flex;
-    font-size: 13px;
-    margin:5%;
-    margin-top: 10%;
-    &:hover {
-        color: gray;
-    }
-    color: white;
-    text-decoration: none;
-}
-
-#icon_login{
-    margin-top: 15%;
+.container{
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 40px;
-    margin-bottom: 45px;
-}
-
-#icon_login img{
-    height: 100px;
-    border-radius: 90px;
-}
-
-.video video {
     height: 100%;
     width: 100%;
+}
+
+.sidebar{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+
+    z-index: 100;
+    width: 0.1%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 20px 0;
+    border: 0.1rem solid black;
+    background: #345567;
+    transition: width 1s;
+    overflow: hidden;
+}
+
+.sidebar .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6rem;
+    margin-bottom: 2rem;
+}
+
+.icon img{
+    border: 0.1rem solid black;
+    height: 5rem;
+    border-radius: 9rem;
+}
+
+.sidebar:hover {
+    width: 15%;
+    transition: width 0.4s;
+}
+
+.container_painel {
+    height: 90%;
+    width: 90%;
+    border-radius: 2rem;
+    border: 1px solid black;
+    background-color: #6A8EA1;
+    display: flex;
+    overflow: hidden;
+}
+
+.painel {
+    width: 70%;
+    border-right: 0.1rem solid black;
 }
 
 .body_painel {
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2.6% 0px 0px 4.9%;
-    position: absolute;
-    height: 88%;
+    flex-direction: column;
+}
+.body_painel .video_painel{
+    margin-bottom: 2rem;
+    width: 70%;
+    height: 50%;
+}   
+
+.video_painel video{
+    border-right: 0.1rem solid black;
+    width: 100%;
+    height: 100%;
 }
 
-#painel {
-    background-color: #6A8EA1;
-    border: 1px solid black;
-    border-radius: 5px 5px 15px 15px;
-    margin: 1%;
-    min-height: 95vh;
-    margin-left: 16%;
+.sidebar_videos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 100%;
 }
 
-#painel .sidebar_painel {
-    font-size: 15px;
-    min-height: 94vh;
-    position: relative;
-    margin-left: 70%;
-    border-left: 1px solid black;
-    padding: 0.5%;
+.container_videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #D9D9D9;
+    font-size: 1.1rem;
+    width: 90%;
+    height: 90%;
+    border-radius: 1rem;
 }
 
-.sidebar_painel ul li{
-    margin-top: 10px;
-    margin-bottom: 20px;
+#line {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.container_videos a {
+    margin-bottom: 0.5rem;
+}
+
+.list_videos {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.videos {
+    margin: 1rem;
+    width: 90%;
+    height: 90%;
+}
+
+.videos a {
+    margin: 0.5rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000000;
+}
+ 
+a:active {
+    color: blue;
+}
+
+.logs_painel {
+    background-color: #D9D9D9;
+    width: 50%;
+    height: 20%;
+    border: 0.1rem solid black;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.logs_painel ul li{
     list-style: none;
 }
 
-.logs {
-    background-color: #D9D9D9;
-
-    font-size: 14px;
-    position: absolute;
+.container_cameras {
+    margin-top: -0.2rem;
     display: flex;
-
-    border: 1px solid black ;
-    margin: 2.5% 0% 0% 0%;
-
-    height: 20vh;
-    width: 100%;
+    height: 100%;
+    overflow: auto;
+    flex-direction: column;
+    align-items: center;
+    background-color: #6A8EA1;
+    font-size: 1.1rem;
 }
 
-.logs ul {
-padding: 0;
-margin-top: 2%;
-list-style: none;
+.container_cameras ul li {
+    list-style: none;
+
 }
 
-.logs li {
-margin-bottom: 5%;
+.logout{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.logout img {
+    height: 1.7rem;
+    width: 1.7rem;
 }
